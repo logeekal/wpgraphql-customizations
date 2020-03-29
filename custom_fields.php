@@ -1,7 +1,7 @@
 <?
 
 function run(){
- $hobbies = [
+ $thumbnail_field = [
                 //      'type'        => \WPGraphQL\Types::list_of( \WPGraphQL\Types::string() ),
                         'type'        => 'String',
                         'description' => __( 'Custom field for user mutations', 'your-textdomain' ),
@@ -12,7 +12,7 @@ function run(){
                         },
                 ];
 
-                register_graphql_field( 'Category', 'thumbnail', $hobbies );
+                register_graphql_field( 'Category', 'thumbnail', $thumbnail_field );
 
 
 }
